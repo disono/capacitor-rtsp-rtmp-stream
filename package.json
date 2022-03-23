@@ -25,7 +25,13 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "rtmp",
+    "rtsp",
+    "live streaming",
+    "ionic",
+    "video streaming",
+    "streaming"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
