@@ -1,13 +1,13 @@
-import {registerPlugin} from '@capacitor/core';
+import { registerPlugin } from '@capacitor/core';
 
-import type {CapacitorRtmpRtspStreamPlugin} from './definitions';
+import type { CapacitorRtspRtmpStreamPlugin } from './definitions';
 
-const CapacitorRtmpRtspStream = registerPlugin<CapacitorRtmpRtspStreamPlugin>(
-    'CapacitorRtmpRtspStream',
-    {
-        web: () => import('./web').then(m => new m.CapacitorRtmpRtspStreamWeb()),
-    },
+const CapacitorRtspRtmpStream = registerPlugin<CapacitorRtspRtmpStreamPlugin>(
+  'CapacitorRtspRtmpStream',
+  {
+    web: () => import('./web').then(m => new m.CapacitorRtspRtmpStreamWeb()),
+  },
 );
 
 export * from './definitions';
-export {CapacitorRtmpRtspStream};
+export { CapacitorRtspRtmpStream };

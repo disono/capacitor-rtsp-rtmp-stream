@@ -1,12 +1,18 @@
-import {WebPlugin} from '@capacitor/core';
+import { WebPlugin } from '@capacitor/core';
 
-import type {CapacitorRtmpRtspStreamPlugin} from './definitions';
+import type { CapacitorRtspRtmpStreamPlugin, RTMPOptions, RTSPOptions } from './definitions';
 
-export class CapacitorRtmpRtspStreamWeb
-    extends WebPlugin
-    implements CapacitorRtmpRtspStreamPlugin {
-    async echo(options: { value: string }): Promise<{ value: string }> {
-        console.log('ECHO', options);
-        return options;
-    }
+export class CapacitorRtspRtmpStreamWeb
+  extends WebPlugin
+  implements CapacitorRtspRtmpStreamPlugin {
+
+  async rtmp(options: RTMPOptions): Promise<void> {
+    console.log('RTMP', options);
+    return Promise.resolve(undefined);
+  }
+
+  async rtsp(options: RTSPOptions): Promise<void> {
+    console.log('RTSP', options);
+    return Promise.resolve(undefined);
+  }
 }

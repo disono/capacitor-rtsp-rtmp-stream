@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorCapacitorRtmpRtspStream',
+      name: 'capacitorCapacitorRtspRtmpStream',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },

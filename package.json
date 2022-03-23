@@ -17,10 +17,10 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/disono/capacitor-rtsp-rtmp-stream.git.git"
+    "url": "git+https://github.com/disono/capacitor-rtsp-rtmp-stream.git"
   },
   "bugs": {
-    "url": "https://github.com/disono/capacitor-rtsp-rtmp-stream.git/issues"
+    "url": "https://github.com/disono/capacitor-rtsp-rtmp-stream/issues"
   },
   "keywords": [
     "capacitor",
@@ -33,11 +33,11 @@
     "verify:android": "cd android && ./gradlew clean build test && cd ..",
     "verify:web": "npm run build",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
-    "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- autocorrect --format",
+    "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format",
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api CapacitorRtmpRtspStreamPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api CapacitorRtspRtmpStreamPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
@@ -46,7 +46,7 @@
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
     "@capacitor/core": "^3.0.0",
-    "@capacitor/docgen": "^0.0.10",
+    "@capacitor/docgen": "^0.0.18",
     "@capacitor/ios": "^3.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
