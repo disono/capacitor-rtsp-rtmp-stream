@@ -81,3 +81,22 @@ rtsp(options: RTSPOptions) => Promise<void>
 | **`password`** | <code>string</code> |
 
 </docgen-api>
+
+# Future Features
+- [ ] iOS support
+- [x] Android support
+
+# Credits
+[https://github.com/pedroSG94/rtmp-rtsp-stream-client-java](https://github.com/pedroSG94/rtmp-rtsp-stream-client-java)
+```sh
+Library for stream in RTMP and RTSP. All code in Java.
+```
+
+# Hire Us!
+Do you like my work? I am a Senior Full Stack App Developer (Web, Desktop & Mobile App) & Sysadmin, you can hire me, open an issue or contact me!
+
+Additionally, you could be interested in check or hire us through our [Webmons Apps](https://webmonsapps.com)
+
+Do you still need more info about me or my work?
+
+You could check my [Linkedin profile](https://www.linkedin.com/in/disono) and [Twitter profile](https://twitter.com/master_archie)
